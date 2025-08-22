@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    // Vite injects vite/client types that define the import.meta
+    // interface used in our React code. See:
+    // https://vitejs.dev/guide/ts.html#typescript-declaration
+    "types": ["vite/client"],
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}
